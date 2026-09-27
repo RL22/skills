@@ -1,0 +1,311 @@
+{
+ "paper": "grid",
+ "seed": 3,
+ "width": 1180,
+ "title": "Component sheet",
+ "items": [
+  {
+   "type": "heading",
+   "text": "Buttons",
+   "size": 20
+  },
+  {
+   "type": "stack",
+   "id": "btns",
+   "w": 290,
+   "gap": 12,
+   "children": [
+    {
+     "type": "row",
+     "gap": 12,
+     "children": [
+      {
+       "type": "button",
+       "label": "Download"
+      },
+      {
+       "type": "button",
+       "label": "Info",
+       "variant": "outline"
+      }
+     ]
+    },
+    {
+     "type": "row",
+     "gap": 12,
+     "children": [
+      {
+       "type": "button",
+       "label": "Twitter",
+       "pill": true,
+       "variant": "outline"
+      },
+      {
+       "type": "button",
+       "label": "Go",
+       "size": "sm"
+      },
+      {
+       "type": "button",
+       "variant": "link",
+       "label": "Learn more"
+      }
+     ]
+    },
+    {
+     "type": "row",
+     "gap": 12,
+     "children": [
+      {
+       "type": "button",
+       "w": 60,
+       "size": "sm"
+      },
+      {
+       "type": "button",
+       "w": 60,
+       "size": "sm",
+       "variant": "ghost"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "id": "inputs",
+   "w": 230,
+   "gap": 10,
+   "children": [
+    {
+     "type": "input",
+     "label": "Name",
+     "filled": true
+    },
+    {
+     "type": "dropdown",
+     "label": "Plan",
+     "value": "Pro"
+    },
+    {
+     "type": "textarea",
+     "label": "Message",
+     "rows": 2
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "id": "controls",
+   "w": 220,
+   "gap": 12,
+   "children": [
+    {
+     "type": "slider",
+     "label": "Speed",
+     "value": 0.35,
+     "display": "1s"
+    },
+    {
+     "type": "slider",
+     "label": "Delay",
+     "value": 0.7,
+     "display": "0.75s"
+    },
+    {
+     "type": "toggle",
+     "label": "Autoplay",
+     "on": true
+    },
+    {
+     "type": "toggle",
+     "label": "Loop"
+    },
+    {
+     "type": "row",
+     "children": [
+      {
+       "type": "checkbox",
+       "label": "Remember",
+       "checked": true
+      },
+      {
+       "type": "radio",
+       "label": "Yearly",
+       "checked": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "id": "nav",
+   "w": 250,
+   "gap": 14,
+   "children": [
+    {
+     "type": "tabs",
+     "items": [
+      "BG",
+      "Content",
+      "Elements"
+     ],
+     "active": 1
+    },
+    {
+     "type": "nav",
+     "items": [
+      "Home",
+      "About",
+      "Contact"
+     ],
+     "cta": "Join"
+    },
+    {
+     "type": "icons",
+     "items": [
+      "t",
+      "f",
+      "i"
+     ],
+     "d": 18
+    },
+    {
+     "type": "divider",
+     "label": "OR"
+    }
+   ]
+  },
+  {
+   "type": "heading",
+   "text": "Content & containers",
+   "size": 20
+  },
+  {
+   "type": "card",
+   "id": "card",
+   "w": 180,
+   "children": [
+    {
+     "type": "image",
+     "h": 80
+    },
+    {
+     "type": "squiggle",
+     "thick": true,
+     "w": "70%"
+    },
+    {
+     "type": "squiggle",
+     "lines": 2
+    }
+   ]
+  },
+  {
+   "type": "add",
+   "label": "Add new",
+   "w": 150,
+   "h": 150
+  },
+  {
+   "type": "stack",
+   "w": 200,
+   "gap": 12,
+   "children": [
+    {
+     "type": "row",
+     "children": [
+      {
+       "type": "avatar",
+       "d": 46
+      },
+      {
+       "type": "avatar",
+       "d": 46,
+       "figure": true
+      },
+      {
+       "type": "badge",
+       "label": "new"
+      }
+     ]
+    },
+    {
+     "type": "list",
+     "items": [
+      "~~",
+      "~~~",
+      "~~"
+     ],
+     "mark": "check"
+    },
+    {
+     "type": "menu",
+     "items": [
+      "Save...",
+      "Start over",
+      "Help"
+     ],
+     "dividers": [
+      1
+     ],
+     "w": 150
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "w": 240,
+   "gap": 12,
+   "children": [
+    {
+     "type": "table",
+     "cells": [
+      [
+       "Plan",
+       "Price",
+       "Sites"
+      ],
+      [
+       "Pro",
+       "$19",
+       "3"
+      ],
+      [
+       "~",
+       "~",
+       "~"
+      ]
+     ]
+    },
+    {
+     "type": "chart",
+     "bars": [
+      0.3,
+      0.6,
+      0.45,
+      0.9,
+      0.7
+     ],
+     "highlight": 3,
+     "h": 70
+    },
+    {
+     "type": "video",
+     "h": 70
+    }
+   ]
+  },
+  {
+   "type": "note",
+   "text": "hatch = solid / primary",
+   "to": "btns@0.12,0.12",
+   "near": "btns",
+   "side": "top",
+   "offset": 18,
+   "fx": 0.75
+  }
+ ],
+ "gap": 56
+}

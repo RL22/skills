@@ -1,0 +1,254 @@
+{
+ "paper": "plain",
+ "seed": 8,
+ "items": [
+  {
+   "type": "heading",
+   "text": "CURRENT",
+   "size": 18
+  },
+  {
+   "type": "screen",
+   "id": "cur1",
+   "w": 150,
+   "h": 100,
+   "children": [
+    {
+     "type": "logo",
+     "align": "center"
+    },
+    {
+     "type": "button",
+     "size": "sm",
+     "w": 44,
+     "align": "center"
+    }
+   ]
+  },
+  {
+   "type": "screen",
+   "id": "cur2",
+   "w": 150,
+   "h": 100,
+   "children": [
+    {
+     "type": "image",
+     "h": 70,
+     "label": "Build"
+    }
+   ]
+  },
+  {
+   "type": "heading",
+   "text": "NEW",
+   "size": 18
+  },
+  {
+   "type": "screen",
+   "id": "n1",
+   "w": 300,
+   "h": 262,
+   "chrome": "browser",
+   "children": [
+    {
+     "type": "nav",
+     "n": 3,
+     "cta": true
+    },
+    {
+     "type": "logo",
+     "align": "center",
+     "d": 30
+    },
+    {
+     "type": "squiggle",
+     "thick": true,
+     "w": "55%",
+     "align": "center"
+    },
+    {
+     "type": "row",
+     "justify": "center",
+     "children": [
+      {
+       "type": "image",
+       "w": 40,
+       "h": 50
+      },
+      {
+       "type": "image",
+       "w": 110,
+       "h": 70,
+       "id": "hero"
+      },
+      {
+       "type": "image",
+       "w": 30,
+       "h": 50
+      }
+     ]
+    },
+    {
+     "type": "row",
+     "justify": "center",
+     "children": [
+      {
+       "type": "button",
+       "size": "sm",
+       "w": 60
+      },
+      {
+       "type": "button",
+       "size": "sm",
+       "w": 60,
+       "variant": "ghost"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "screen",
+   "id": "n2",
+   "w": 300,
+   "h": 262,
+   "children": [
+    {
+     "type": "text",
+     "text": "Intro",
+     "align": "center",
+     "size": 18
+    },
+    {
+     "type": "squiggle",
+     "w": "40%",
+     "align": "center"
+    },
+    {
+     "type": "grid",
+     "cols": 3,
+     "gap": 6,
+     "children": [
+      {
+       "type": "image",
+       "h": 58
+      },
+      {
+       "type": "image",
+       "h": 58
+      },
+      {
+       "type": "image",
+       "h": 58
+      },
+      {
+       "type": "image",
+       "h": 58
+      },
+      {
+       "type": "image",
+       "h": 58
+      },
+      {
+       "type": "image",
+       "h": 58
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "screen",
+   "id": "n3",
+   "w": 300,
+   "h": 262,
+   "children": [
+    {
+     "type": "text",
+     "text": "Pro!",
+     "align": "center",
+     "size": 18
+    },
+    {
+     "type": "grid",
+     "cols": 2,
+     "gap": 10,
+     "children": [
+      {
+       "type": "list",
+       "mark": "circle",
+       "n": 3
+      },
+      {
+       "type": "list",
+       "mark": "circle",
+       "n": 3
+      }
+     ]
+    },
+    {
+     "type": "button",
+     "label": "Go Pro",
+     "align": "center"
+    }
+   ]
+  },
+  {
+   "type": "arrow",
+   "from": "cur1",
+   "to": "cur2",
+   "bend": 0
+  },
+  {
+   "type": "step",
+   "n": 1,
+   "target": "n1"
+  },
+  {
+   "type": "step",
+   "n": 2,
+   "target": "n2"
+  },
+  {
+   "type": "step",
+   "n": 3,
+   "target": "n3"
+  },
+  {
+   "type": "note",
+   "text": "fade in\non scroll",
+   "near": "n1",
+   "side": "bottom",
+   "offset": 26,
+   "fx": 0.3,
+   "to": "hero"
+  },
+  {
+   "type": "note",
+   "text": "lazy load",
+   "near": "n2",
+   "side": "bottom",
+   "offset": 26,
+   "to": "n2@0.8,0.9"
+  },
+  {
+   "type": "note",
+   "text": "new = optional",
+   "ink": "red",
+   "near": "n3",
+   "side": "bottom",
+   "offset": 26,
+   "to": "n3@0.5,0.88"
+  },
+  {
+   "type": "note",
+   "text": "keeps the same CTA",
+   "ink": "green",
+   "near": "cur2",
+   "side": "right",
+   "offset": 40,
+   "fy": 0.5,
+   "to": "cur2.right"
+  }
+ ]
+}

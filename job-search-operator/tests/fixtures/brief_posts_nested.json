@@ -1,0 +1,6 @@
+[
+  {"rank": 1, "score": 70,
+   "breakdown": {"hits": ["web"]},
+   "post": {"post_url": "https://example.com/p/2", "author_name": "Acme Page", "author_type": "page",
+            "text": "Short", "like_count": 1, "comment_count": 0}}
+]

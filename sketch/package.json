@@ -1,0 +1,18 @@
+{
+  "name": "sketch",
+  "private": true,
+  "type": "module",
+  "description": "Render hand-drawn UX/UI sketch boards from JSON specs",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "render": "node scripts/render.mjs",
+    "test": "node scripts/check.mjs && node tests/test-trace.mjs && node tests/test-pages.mjs && node tests/test-diagrams.mjs && node tests/test-capture.mjs && node tests/test-primary.mjs",
+    "previews": "node scripts/check.mjs --update-previews && node tests/test-pages.mjs --out && cp tests/pages-130.jpg examples/pages.jpg"
+  },
+  "dependencies": {
+    "playwright-core": "1.62.1",
+    "roughjs": "4.6.6"
+  }
+}

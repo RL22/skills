@@ -1,0 +1,4 @@
+interface:
+  display_name: "Job Search Operator"
+  short_description: "Run a structured, evidence-based job search"
+  default_prompt: "Use $job-search-operator to assess this role and recommend my next action."

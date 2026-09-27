@@ -1,0 +1,670 @@
+{
+ "version": 1,
+ "url": "file:landing.html",
+ "capturedAt": "2026-09-25T22:40:11.848Z",
+ "chromium": "151.0.7922.34",
+ "viewport": {
+  "width": 1280,
+  "height": 800,
+  "mobile": false
+ },
+ "title": "Fixture landing",
+ "pageBg": "rgb(255, 255, 255)",
+ "docHeight": 901,
+ "layout": {
+  "width": 1280,
+  "height": 800
+ },
+ "nodes": [
+  {
+   "kind": "icon",
+   "x": 48,
+   "y": 16,
+   "w": 32,
+   "h": 32,
+   "path": "html:1>body:1>header:1>svg:1",
+   "ids": [],
+   "cls": [],
+   "pos": null,
+   "inNav": false,
+   "inHeader": true,
+   "inFooter": false
+  },
+  {
+   "kind": "text",
+   "x": 930,
+   "y": 23,
+   "w": 57,
+   "h": 18,
+   "path": "html:1>body:1>header:1>nav:1>a:1",
+   "ids": [],
+   "cls": [],
+   "pos": null,
+   "inNav": true,
+   "inHeader": true,
+   "inFooter": false,
+   "text": "Product",
+   "words": 1,
+   "fontSize": 16,
+   "fontWeight": 400,
+   "link": true,
+   "lines": [
+    {
+     "x": 930,
+     "y": 23,
+     "w": 57,
+     "h": 18
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "x": 1011,
+   "y": 23,
+   "w": 50,
+   "h": 18,
+   "path": "html:1>body:1>header:1>nav:1>a:2",
+   "ids": [],
+   "cls": [],
+   "pos": null,
+   "inNav": true,
+   "inHeader": true,
+   "inFooter": false,
+   "text": "Pricing",
+   "words": 1,
+   "fontSize": 16,
+   "fontWeight": 400,
+   "link": true,
+   "lines": [
+    {
+     "x": 1011,
+     "y": 23,
+     "w": 50,
+     "h": 18
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "x": 1085,
+   "y": 23,
+   "w": 79,
+   "h": 18,
+   "path": "html:1>body:1>header:1>nav:1>a:3",
+   "ids": [],
+   "cls": [],
+   "pos": null,
+   "inNav": true,
+   "inHeader": true,
+   "inFooter": false,
+   "text": "Customers",
+   "words": 1,
+   "fontSize": 16,
+   "fontWeight": 400,
+   "link": true,
+   "lines": [
+    {
+     "x": 1085,
+     "y": 23,
+     "w": 79,
+     "h": 18
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "x": 1188,
+   "y": 23,
+   "w": 44,
+   "h": 18,
+   "path": "html:1>body:1>header:1>nav:1>a:4",
+   "ids": [],
+   "cls": [],
+   "pos": null,
+   "inNav": true,
+   "inHeader": true,
+   "inFooter": false,
+   "text": "Log in",
+   "words": 2,
+   "fontSize": 16,
+   "fontWeight": 400,
+   "link": true,
+   "lines": [
+    {
+     "x": 1188,
+     "y": 23,
+     "w": 44,
+     "h": 18
+    }
+   ]
+  },
+  {
+   "kind": "heading",
+   "x": 48,
+   "y": 129,
+   "w": 572,
+   "h": 106,
+   "path": "html:1>body:1>main:1>section:1>div:1>h1:1",
+   "ids": [],
+   "cls": [],
+   "pos": null,
+   "inNav": false,
+   "inHeader": false,
+   "inFooter": false,
+   "level": 1,
+   "text": "Ship landing pages in an afternoon",
+   "fontSize": 48,
+   "lines": [
+    {
+     "x": 48,
+     "y": 127,
+     "w": 535,
+     "h": 56,
+     "text": "Ship landing pages in an"
+    },
+    {
+     "x": 48,
+     "y": 180,
+     "w": 218,
+     "h": 56,
+     "text": "afternoon"
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "x": 48,
+   "y": 251,
+   "w": 572,
+   "h": 48,
+   "path": "html:1>body:1>main:1>section:1>div:1>p:1",
+   "ids": [],
+   "cls": [],
+   "pos": null,
+   "inNav": false,
+   "inHeader": false,
+   "inFooter": false,
+   "text": "Pick a starting point, drop in your copy, and publish to your own domain without touching code or waiting on a developer.",
+   "words": 22,
+   "fontSize": 16,
+   "fontWeight": 400,
+   "link": false,
+   "lines": [
+    {
+     "x": 48,
+     "y": 254,
+     "w": 517,
+     "h": 18
+    },
+    {
+     "x": 48,
+     "y": 278,
+     "w": 351,
+     "h": 18
+    }
+   ]
+  },
+  {
+   "kind": "button",
+   "x": 48,
+   "y": 315,
+   "w": 126,
+   "h": 48,
+   "path": "html:1>body:1>main:1>section:1>div:1>p:2>a:1",
+   "ids": [],
+   "cls": [
+    "cta"
+   ],
+   "pos": null,
+   "inNav": false,
+   "inHeader": false,
+   "inFooter": false,
+   "text": "Get started",
+   "aria": "",
+   "filled": true,
+   "boxed": true,
+   "bg": "rgb(91, 61, 245)",
+   "border": 0
+  },
+  {
+   "kind": "button",
+   "x": 186,
+   "y": 315,
+   "w": 145,
+   "h": 48,
+   "path": "html:1>body:1>main:1>section:1>div:1>p:2>a:2",
+   "ids": [],
+   "cls": [
+    "ghost"
+   ],
+   "pos": null,
+   "inNav": false,
+   "inHeader": false,
+   "inFooter": false,
+   "text": "See examples",
+   "aria": "",
+   "filled": false,
+   "boxed": true,
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": 4
+  },
+  {
+   "kind": "image",
+   "x": 660,
+   "y": 129,
+   "w": 572,
+   "h": 300,
+   "path": "html:1>body:1>main:1>section:1>div:2",
+   "ids": [],
+   "cls": [
+    "shot"
+   ],
+   "pos": null,
+   "inNav": false,
+   "inHeader": false,
+   "inFooter": false,
+   "bgImage": true
+  },
+  {
+   "kind": "box",
+   "x": 48,
+   "y": 493,
+   "w": 379,
+   "h": 202,
+   "path": "html:1>body:1>main:1>section:2>div:1",
+   "ids": [],
+   "cls": [
+    "card"
+   ],
+   "pos": null,
+   "inNav": false,
+   "inHeader": false,
+   "inFooter": false,
+   "filled": false,
+   "border": 4
+  },
+  {
+   "kind": "icon",
+   "x": 69,
+   "y": 514,
+   "w": 24,
+   "h": 24,
+   "path": "html:1>body:1>main:1>section:2>div:1>svg:1",
+   "ids": [],
+   "cls": [],
+   "pos": null,
+   "inNav": false,
+   "inHeader": false,
+   "inFooter": false
+  },
+  {
+   "kind": "heading",
+   "x": 69,
+   "y": 563,
+   "w": 337,
+   "h": 28,
+   "path": "html:1>body:1>main:1>section:2>div:1>h3:1",
+   "ids": [],
+   "cls": [],
+   "pos": null,
+   "inNav": false,
+   "inHeader": false,
+   "inFooter": false,
+   "level": 3,
+   "text": "Fast",
+   "fontSize": 18.72,
+   "lines": [
+    {
+     "x": 69,
+     "y": 566,
+     "w": 38,
+     "h": 22,
+     "text": "Fast"
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "x": 69,
+   "y": 610,
+   "w": 337,
+   "h": 48,
+   "path": "html:1>body:1>main:1>section:2>div:1>p:1",
+   "ids": [],
+   "cls": [],
+   "pos": null,
+   "inNav": false,
+   "inHeader": false,
+   "inFooter": false,
+   "text": "Pages load in under a second on any connection.",
+   "words": 9,
+   "fontSize": 16,
+   "fontWeight": 400,
+   "link": false,
+   "lines": [
+    {
+     "x": 69,
+     "y": 613,
+     "w": 265,
+     "h": 18
+    },
+    {
+     "x": 69,
+     "y": 637,
+     "w": 85,
+     "h": 18
+    }
+   ]
+  },
+  {
+   "kind": "box",
+   "x": 451,
+   "y": 493,
+   "w": 379,
+   "h": 202,
+   "path": "html:1>body:1>main:1>section:2>div:2",
+   "ids": [],
+   "cls": [
+    "card"
+   ],
+   "pos": null,
+   "inNav": false,
+   "inHeader": false,
+   "inFooter": false,
+   "filled": false,
+   "border": 4
+  },
+  {
+   "kind": "icon",
+   "x": 472,
+   "y": 514,
+   "w": 24,
+   "h": 24,
+   "path": "html:1>body:1>main:1>section:2>div:2>svg:1",
+   "ids": [],
+   "cls": [],
+   "pos": null,
+   "inNav": false,
+   "inHeader": false,
+   "inFooter": false
+  },
+  {
+   "kind": "heading",
+   "x": 472,
+   "y": 563,
+   "w": 337,
+   "h": 28,
+   "path": "html:1>body:1>main:1>section:2>div:2>h3:1",
+   "ids": [],
+   "cls": [],
+   "pos": null,
+   "inNav": false,
+   "inHeader": false,
+   "inFooter": false,
+   "level": 3,
+   "text": "Simple",
+   "fontSize": 18.72,
+   "lines": [
+    {
+     "x": 472,
+     "y": 566,
+     "w": 61,
+     "h": 22,
+     "text": "Simple"
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "x": 472,
+   "y": 610,
+   "w": 337,
+   "h": 24,
+   "path": "html:1>body:1>main:1>section:2>div:2>p:1",
+   "ids": [],
+   "cls": [],
+   "pos": null,
+   "inNav": false,
+   "inHeader": false,
+   "inFooter": false,
+   "text": "One page, one goal, no plugins to babysit.",
+   "words": 8,
+   "fontSize": 16,
+   "fontWeight": 400,
+   "link": false,
+   "lines": [
+    {
+     "x": 472,
+     "y": 613,
+     "w": 304,
+     "h": 18
+    }
+   ]
+  },
+  {
+   "kind": "box",
+   "x": 853,
+   "y": 493,
+   "w": 379,
+   "h": 202,
+   "path": "html:1>body:1>main:1>section:2>div:3",
+   "ids": [],
+   "cls": [
+    "card"
+   ],
+   "pos": null,
+   "inNav": false,
+   "inHeader": false,
+   "inFooter": false,
+   "filled": false,
+   "border": 4
+  },
+  {
+   "kind": "icon",
+   "x": 874,
+   "y": 514,
+   "w": 24,
+   "h": 24,
+   "path": "html:1>body:1>main:1>section:2>div:3>svg:1",
+   "ids": [],
+   "cls": [],
+   "pos": null,
+   "inNav": false,
+   "inHeader": false,
+   "inFooter": false
+  },
+  {
+   "kind": "heading",
+   "x": 874,
+   "y": 563,
+   "w": 337,
+   "h": 28,
+   "path": "html:1>body:1>main:1>section:2>div:3>h3:1",
+   "ids": [],
+   "cls": [],
+   "pos": null,
+   "inNav": false,
+   "inHeader": false,
+   "inFooter": false,
+   "level": 3,
+   "text": "Yours",
+   "fontSize": 18.72,
+   "lines": [
+    {
+     "x": 874,
+     "y": 566,
+     "w": 51,
+     "h": 22,
+     "text": "Yours"
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "x": 874,
+   "y": 610,
+   "w": 337,
+   "h": 24,
+   "path": "html:1>body:1>main:1>section:2>div:3>p:1",
+   "ids": [],
+   "cls": [],
+   "pos": null,
+   "inNav": false,
+   "inHeader": false,
+   "inFooter": false,
+   "text": "Custom domains and exports on every plan.",
+   "words": 7,
+   "fontSize": 16,
+   "fontWeight": 400,
+   "link": false,
+   "lines": [
+    {
+     "x": 874,
+     "y": 613,
+     "w": 318,
+     "h": 18
+    }
+   ]
+  },
+  {
+   "kind": "input",
+   "x": 48,
+   "y": 743,
+   "w": 302,
+   "h": 37,
+   "path": "html:1>body:1>main:1>form:1>input:1",
+   "ids": [],
+   "cls": [],
+   "pos": null,
+   "inNav": false,
+   "inHeader": false,
+   "inFooter": false,
+   "text": "you@company.com"
+  },
+  {
+   "kind": "button",
+   "x": 362,
+   "y": 743,
+   "w": 106,
+   "h": 37,
+   "path": "html:1>body:1>main:1>form:1>button:1",
+   "ids": [],
+   "cls": [],
+   "pos": null,
+   "inNav": false,
+   "inHeader": false,
+   "inFooter": false,
+   "text": "Join the waitlist",
+   "aria": "",
+   "filled": true,
+   "boxed": true,
+   "bg": "rgb(239, 239, 239)",
+   "border": 4
+  },
+  {
+   "kind": "text",
+   "x": 48,
+   "y": 856,
+   "w": 45,
+   "h": 18,
+   "path": "html:1>body:1>footer:1>a:1",
+   "ids": [],
+   "cls": [],
+   "pos": null,
+   "inNav": false,
+   "inHeader": false,
+   "inFooter": true,
+   "text": "Terms",
+   "words": 1,
+   "fontSize": 16,
+   "fontWeight": 400,
+   "link": true,
+   "lines": [
+    {
+     "x": 48,
+     "y": 856,
+     "w": 45,
+     "h": 18
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "x": 106,
+   "y": 856,
+   "w": 53,
+   "h": 18,
+   "path": "html:1>body:1>footer:1>a:2",
+   "ids": [],
+   "cls": [],
+   "pos": null,
+   "inNav": false,
+   "inHeader": false,
+   "inFooter": true,
+   "text": "Privacy",
+   "words": 1,
+   "fontSize": 16,
+   "fontWeight": 400,
+   "link": true,
+   "lines": [
+    {
+     "x": 106,
+     "y": 856,
+     "w": 53,
+     "h": 18
+    }
+   ]
+  },
+  {
+   "kind": "text",
+   "x": 0,
+   "y": 744,
+   "w": 1280,
+   "h": 56,
+   "path": "html:1>body:1>div:1",
+   "ids": [
+    "cookie"
+   ],
+   "cls": [],
+   "pos": "fixed",
+   "inNav": false,
+   "inHeader": false,
+   "inFooter": false,
+   "text": "We use cookies to improve your experience.",
+   "words": 7,
+   "fontSize": 16,
+   "fontWeight": 400,
+   "link": false,
+   "lines": [
+    {
+     "x": 48,
+     "y": 763,
+     "w": 323,
+     "h": 18
+    }
+   ]
+  },
+  {
+   "kind": "button",
+   "x": 371,
+   "y": 763,
+   "w": 74,
+   "h": 21,
+   "path": "html:1>body:1>div:1>button:1",
+   "ids": [
+    "cookie"
+   ],
+   "cls": [],
+   "pos": "fixed",
+   "inNav": false,
+   "inHeader": false,
+   "inFooter": false,
+   "text": "Accept all",
+   "aria": "",
+   "filled": true,
+   "boxed": true,
+   "bg": "rgb(239, 239, 239)",
+   "border": 4
+  }
+ ]
+}

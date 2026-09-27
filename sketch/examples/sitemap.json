@@ -1,0 +1,22 @@
+{
+  "paper": "plain", "seed": 14, "title": "Sitemap — Studio site",
+  "items": [
+    { "type": "tree", "id": "map", "nodeW": 120, "gapX": 34, "gapY": 46, "root":
+      { "id": "home", "label": "Home", "children": [
+        { "id": "work", "label": "Work", "badge": 1, "children": [
+          { "id": "case", "label": "Case study", "children": [ { "id": "ext", "label": "Live site", "dashed": true } ] } ] },
+        { "id": "services", "label": "Services", "children": [
+          { "id": "svc", "label": "Service", "children": [ { "id": "quote", "label": "Get a quote", "badge": 2 } ] } ] },
+        { "id": "about", "label": "About", "children": [ { "id": "team", "label": "Team" } ] },
+        { "id": "blog", "label": "Journal", "children": [ { "id": "post", "label": "Post" } ] },
+        { "id": "contact", "label": "Contact", "badge": 3, "children": [ { "id": "thanks", "label": "Thanks" } ] }
+      ] }
+    },
+    { "type": "note", "text": "main nav", "near": "home", "side": "right", "offset": 40, "fy": 0.4, "to": "home.right" },
+    { "type": "legend", "cols": 3, "items": [
+      "Case studies lead with the outcome, then the process sketches.",
+      "Quote form replaces the old contact-us dead end.",
+      "Contact collects budget + timeline up front."
+    ] }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "$comment": "Routing table for delegate.sh and elg-engine 2-Wire Protocol. Each entry: task | executor (+pinned) | model | effort | mode | digest | fallback | tier. `pinned: true` means never reroute this executor away, even when it matches the current driver (see delegate.sh's self-delegation guard). `fallback: null` means stop-only: a hard failure (empty output or timeout) surfaces as-is, no retry. `fallback: {executor, model}` retries exactly once on that target, and only for tasks whose output is consumed rather than judged (see SKILL.md's Fallback Policy). `tier` (0-3) is the capability tier this task's model must satisfy, defined in ~/Sprintz/.agents/AGENTS.md §4 — that doc defines tier semantics only (no model names); this file is the single place actual model IDs are pinned per tier, so a rename only needs one edit.",
+  "wire_engine": {
+    "description": "2-Wire universal engine protocol for elg-kit and agent delegation",
+    "wire_1": {
+      "name": "Universal OpenAI-compatible Wire",
+      "protocol": "POST ${baseUrl}/chat/completions",
+      "providers": ["openrouter", "openai", "groq", "deepseek", "ollama"],
+      "default_base_url": "https://openrouter.ai/api/v1",
+      "response_extractor": "data.choices[0].message.content"
+    },
+    "wire_2": {
+      "name": "Anthropic Native Wire",
+      "protocol": "POST ${baseUrl || 'https://api.anthropic.com'}/v1/messages",
+      "providers": ["anthropic"],
+      "activation": "Activated when ANTHROPIC_API_KEY is supplied without OPENROUTER_API_KEY",
+      "response_extractor": "data.content[0].text"
+    },
+    "failover": "1-level automatic failover on HTTP 429, 503, or timeout (retrying once on fallback model)",
+    "sanitization": "Strips <think>...</think> and [thinking]...[/thinking] reasoning traces",
+    "temperature_rule": "Omit temperature for reasoning models matching /o1|o3|r1|thinking/i"
+  },
+  "semantic_tiers": {
+    "triage": {
+      "tier": 1,
+      "description": "Fast & cheap triage, signal parsing, schema classification",
+      "primary": "google/gemini-3.8-flash",
+      "fallback": "anthropic/claude-haiku-4-5"
+    },
+    "workhorse": {
+      "tier": 2,
+      "description": "Frontier workhorse for perspective generation, code implementation, and copywriting",
+      "primary": "anthropic/claude-3.7-sonnet",
+      "fallback": "google/gemini-3.8-flash"
+    },
+    "reasoning": {
+      "tier": 3,
+      "description": "Deep reasoning, architectural logic, and edge-case validation (temperature omitted)",
+      "primary": "deepseek/deepseek-r1",
+      "fallback": "openai/o3-mini"
+    },
+    "frontier": {
+      "tier": 3,
+      "description": "Maximum frontier capability and holistic synthesis",
+      "primary": "anthropic/claude-opus-5",
+      "fallback": "google/gemini-3.1-pro-high"
+    }
+  },
+  "routes": [
+    { "task": "search",    "executor": "agy",    "pinned": true,  "model": "gemini-3.1-pro-high",   "effort": "high",   "mode": "web",   "digest": false, "fallback": null, "tier": 2 },
+    { "task": "bulk",      "executor": "agy",    "pinned": false, "model": "gemini-3.7-flash-high", "effort": "high",   "mode": "read",  "digest": true,  "fallback": { "executor": "claude", "model": "claude-haiku-4-5" }, "tier": 1 },
+    { "task": "cheap",     "executor": "agy",    "pinned": false, "model": "gemini-3.7-flash-low",  "effort": "low",    "mode": "read",  "digest": false, "fallback": { "executor": "claude", "model": "claude-haiku-4-5" }, "tier": 1 },
+    { "task": "media",     "executor": "agy",    "pinned": false, "model": "gemini-3.7-flash-high", "effort": "high",   "mode": "read",  "digest": false, "fallback": null, "tier": 2 },
+    { "task": "scaffold",  "executor": "agy",    "pinned": false, "model": "gemini-3.7-flash-high", "effort": "medium", "mode": "write", "digest": false, "fallback": null, "tier": 2 },
+    { "task": "review",    "executor": "codex",  "pinned": false, "model": "gpt-5.6-sol",           "effort": "high",   "mode": "read",  "digest": false, "fallback": null, "tier": 3 },
+    { "task": "reason",    "executor": "codex",  "pinned": false, "model": "gpt-5.6-sol",           "effort": "high",   "mode": "read",  "digest": false, "fallback": null, "tier": 3 },
+    { "task": "audit",     "executor": "claude", "pinned": true,  "model": "claude-opus-5",       "effort": "high",   "mode": "read",  "digest": false, "fallback": null, "tier": 3 },
+    { "task": "implement", "executor": "codex",  "pinned": false, "model": "gpt-5.6-sol",           "effort": "medium", "mode": "write", "digest": false, "fallback": null, "tier": 2 },
+    { "task": "summarize", "executor": "claude", "pinned": true,  "model": "claude-haiku-4-5",      "effort": "low",    "mode": "read",  "digest": true,  "fallback": null, "tier": 1 },
+    { "task": "draft",     "executor": "claude", "pinned": true,  "model": "claude-sonnet-5",       "effort": "medium", "mode": "read",  "digest": false, "fallback": null, "tier": 2 },
+    { "task": "image",      "executor": "agy",   "pinned": false, "model": "gemini-3.1-pro-high",   "effort": null,     "mode": "image", "digest": false, "fallback": null, "tier": 2 },
+    { "task": "image-text",  "executor": "codex", "pinned": false, "model": null,                   "effort": null,     "mode": "image", "digest": false, "fallback": null, "tier": 2 },
+    { "task": "image-alt",   "executor": "codex", "pinned": false, "model": null,                   "effort": null,     "mode": "image", "digest": false, "fallback": null, "tier": 2 }
+  ]
+}

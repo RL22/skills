@@ -1,0 +1,110 @@
+{
+ "paper": "grid",
+ "seed": 9,
+ "title": "Journey \u2014 first project with a studio",
+ "items": [
+  {
+   "type": "journey",
+   "w": 1180,
+   "highlight": 2,
+   "phases": [
+    {
+     "title": "Discover",
+     "actions": [
+      "Sees a post",
+      "~~",
+      "Visits site"
+     ],
+     "points": [
+      {
+       "score": 0,
+       "touch": "social",
+       "note": "Looks legit, but is it for me?"
+      },
+      {
+       "score": 1,
+       "touch": "web"
+      }
+     ],
+     "opportunities": [
+      "Lead with results",
+      "~~~"
+     ]
+    },
+    {
+     "title": "Evaluate",
+     "actions": [
+      "Reads case study",
+      "Checks pricing"
+     ],
+     "points": [
+      {
+       "score": 1.5,
+       "touch": "web",
+       "note": "Their process sketches sold me"
+      },
+      {
+       "score": -1,
+       "touch": "web",
+       "note": "No prices \u2014 hesitates"
+      }
+     ],
+     "opportunities": [
+      "Show price ranges",
+      "~~"
+     ]
+    },
+    {
+     "title": "Book",
+     "actions": [
+      "Fills quote form",
+      "Books call"
+     ],
+     "points": [
+      {
+       "score": 0.5,
+       "touch": "form"
+      },
+      {
+       "score": 2,
+       "touch": "call",
+       "note": "Call felt easy"
+      }
+     ],
+     "opportunities": [
+      "Pre-fill from form",
+      "~~~"
+     ]
+    },
+    {
+     "title": "Kickoff",
+     "actions": [
+      "Gets proposal",
+      "~~",
+      "Signs"
+     ],
+     "points": [
+      {
+       "score": -0.5,
+       "touch": "email",
+       "note": "Long proposal PDF"
+      },
+      {
+       "score": 1.5,
+       "touch": "email"
+      }
+     ],
+     "opportunities": [
+      "One-page proposal",
+      "~~"
+     ]
+    }
+   ],
+   "meta": {
+    "persona": "Founder, first website",
+    "scenario": "Hiring a studio",
+    "timeline": "3 weeks"
+   }
+  }
+ ]
+}

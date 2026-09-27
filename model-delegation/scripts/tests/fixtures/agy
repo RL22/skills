@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+set -uo pipefail
+
+WORKDIR="$PWD"
+while [ $# -gt 0 ]; do
+  case "$1" in
+    --add-dir) WORKDIR="${2:-}"; shift 2 ;;
+    *) shift ;;
+  esac
+done
+
+if [ "${MOCK_AGY_FAIL_RC:-0}" -ne 0 ]; then
+  printf 'mock agy failure\n' >&2
+  exit "$MOCK_AGY_FAIL_RC"
+fi
+
+printf 'png\n' > "$WORKDIR/fast.png"
+printf 'generated\n'

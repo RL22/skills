@@ -1,0 +1,693 @@
+{
+ "paper": "grid",
+ "seed": 7,
+ "source": {
+  "url": "file:landing.html",
+  "capturedAt": null,
+  "traced": "responsive.mjs v1"
+ },
+ "items": [
+  {
+   "type": "heading",
+   "id": "desktop-label",
+   "text": "Desktop \u00b7 1280px",
+   "size": 18,
+   "x": 44,
+   "y": 104
+  },
+  {
+   "type": "screen",
+   "id": "desktop-page",
+   "chrome": "browser",
+   "x": 44,
+   "y": 144,
+   "w": 537.6,
+   "h": 360
+  },
+  {
+   "id": "desktop-t1",
+   "type": "card",
+   "x": 64.2,
+   "y": 375.1,
+   "w": 159.2,
+   "h": 84.8,
+   "children": []
+  },
+  {
+   "id": "desktop-t2",
+   "type": "card",
+   "x": 233.4,
+   "y": 375.1,
+   "w": 159.2,
+   "h": 84.8,
+   "children": []
+  },
+  {
+   "id": "desktop-t3",
+   "type": "card",
+   "x": 402.3,
+   "y": 375.1,
+   "w": 159.2,
+   "h": 84.8,
+   "children": []
+  },
+  {
+   "id": "desktop-t4",
+   "type": "logo",
+   "x": 64.2,
+   "y": 174.7,
+   "d": 14
+  },
+  {
+   "id": "desktop-t5",
+   "type": "text",
+   "text": "Product",
+   "size": 10,
+   "overflow": "fit",
+   "x": 434.6,
+   "y": 174.7,
+   "w": 29.9
+  },
+  {
+   "id": "desktop-t6",
+   "type": "text",
+   "text": "Pricing",
+   "size": 10,
+   "overflow": "fit",
+   "x": 468.6,
+   "y": 174.7,
+   "w": 27
+  },
+  {
+   "id": "desktop-t7",
+   "type": "text",
+   "text": "Customers",
+   "size": 10,
+   "overflow": "fit",
+   "x": 499.7,
+   "y": 174.7,
+   "w": 39.2
+  },
+  {
+   "id": "desktop-t8",
+   "type": "text",
+   "text": "Log in",
+   "size": 10,
+   "overflow": "fit",
+   "x": 543,
+   "y": 174.7,
+   "w": 24.5
+  },
+  {
+   "id": "desktop-t9",
+   "type": "text",
+   "text": "Ship landing pages in an",
+   "size": 20,
+   "overflow": "fit",
+   "x": 64.2,
+   "y": 219.6,
+   "w": 232.7
+  },
+  {
+   "id": "desktop-t10",
+   "type": "text",
+   "text": "afternoon",
+   "size": 20,
+   "overflow": "fit",
+   "x": 64.2,
+   "y": 241.9,
+   "w": 99.6
+  },
+  {
+   "id": "desktop-t11",
+   "type": "squiggle",
+   "thick": false,
+   "x": 64.2,
+   "y": 273,
+   "w": 217.1
+  },
+  {
+   "id": "desktop-t12",
+   "type": "squiggle",
+   "thick": false,
+   "x": 64.2,
+   "y": 283.1,
+   "w": 147.4
+  },
+  {
+   "id": "desktop-t13",
+   "type": "button",
+   "x": 64.2,
+   "y": 300.3,
+   "w": 52.9,
+   "h": 20.2,
+   "variant": "primary",
+   "label": "Get started"
+  },
+  {
+   "id": "desktop-t14",
+   "type": "button",
+   "x": 122.1,
+   "y": 300.3,
+   "w": 60.9,
+   "h": 20.2,
+   "variant": "outline",
+   "label": "See examples"
+  },
+  {
+   "id": "desktop-t15",
+   "type": "image",
+   "x": 321.2,
+   "y": 222.2,
+   "w": 240.2,
+   "h": 126
+  },
+  {
+   "id": "desktop-t16",
+   "type": "icons",
+   "n": 1,
+   "x": 73,
+   "y": 383.9,
+   "d": 10.1
+  },
+  {
+   "id": "desktop-t17",
+   "type": "text",
+   "text": "Fast",
+   "size": 11,
+   "overflow": "fit",
+   "x": 73,
+   "y": 402.9,
+   "w": 24
+  },
+  {
+   "id": "desktop-t18",
+   "type": "squiggle",
+   "thick": false,
+   "x": 73,
+   "y": 423.8,
+   "w": 111.3
+  },
+  {
+   "id": "desktop-t19",
+   "type": "squiggle",
+   "thick": false,
+   "x": 73,
+   "y": 433.8,
+   "w": 35.7
+  },
+  {
+   "id": "desktop-t20",
+   "type": "icons",
+   "n": 1,
+   "x": 242.2,
+   "y": 383.9,
+   "d": 10.1
+  },
+  {
+   "id": "desktop-t21",
+   "type": "text",
+   "text": "Simple",
+   "size": 11,
+   "overflow": "fit",
+   "x": 242.2,
+   "y": 402.9,
+   "w": 33.6
+  },
+  {
+   "id": "desktop-t22",
+   "type": "squiggle",
+   "thick": false,
+   "x": 242.2,
+   "y": 423.8,
+   "w": 127.7
+  },
+  {
+   "id": "desktop-t23",
+   "type": "icons",
+   "n": 1,
+   "x": 411.1,
+   "y": 383.9,
+   "d": 10.1
+  },
+  {
+   "id": "desktop-t24",
+   "type": "text",
+   "text": "Yours",
+   "size": 11,
+   "overflow": "fit",
+   "x": 411.1,
+   "y": 402.9,
+   "w": 29.4
+  },
+  {
+   "id": "desktop-t25",
+   "type": "squiggle",
+   "thick": false,
+   "x": 411.1,
+   "y": 423.8,
+   "w": 133.6
+  },
+  {
+   "id": "desktop-t26",
+   "type": "input",
+   "x": 64.2,
+   "y": 480.1,
+   "w": 126.8,
+   "h": 18,
+   "placeholder": "you@company.com"
+  },
+  {
+   "id": "desktop-t27",
+   "type": "button",
+   "x": 196,
+   "y": 479.9,
+   "w": 44.5,
+   "h": 16,
+   "variant": "outline",
+   "label": "Join the waitlist"
+  },
+  {
+   "type": "heading",
+   "id": "tablet-label",
+   "text": "Tablet \u00b7 768px",
+   "size": 18,
+   "x": 642,
+   "y": 104
+  },
+  {
+   "type": "screen",
+   "id": "tablet-page",
+   "chrome": "browser",
+   "x": 642,
+   "y": 144,
+   "w": 322.6,
+   "h": 454.1
+  },
+  {
+   "id": "tablet-t1",
+   "type": "card",
+   "x": 662.2,
+   "y": 386,
+   "w": 136.1,
+   "h": 84.8,
+   "children": []
+  },
+  {
+   "id": "tablet-t2",
+   "type": "card",
+   "x": 808.3,
+   "y": 386,
+   "w": 136.1,
+   "h": 84.8,
+   "children": []
+  },
+  {
+   "id": "tablet-t3",
+   "type": "card",
+   "x": 662.2,
+   "y": 480.9,
+   "w": 136.1,
+   "h": 84.8,
+   "children": []
+  },
+  {
+   "id": "tablet-t4",
+   "type": "logo",
+   "x": 662.2,
+   "y": 174.7,
+   "d": 14
+  },
+  {
+   "id": "tablet-t5",
+   "type": "text",
+   "text": "Product",
+   "size": 10,
+   "overflow": "fit",
+   "x": 817.6,
+   "y": 174.7,
+   "w": 29.9
+  },
+  {
+   "id": "tablet-t6",
+   "type": "text",
+   "text": "Pricing",
+   "size": 10,
+   "overflow": "fit",
+   "x": 851.6,
+   "y": 174.7,
+   "w": 27
+  },
+  {
+   "id": "tablet-t7",
+   "type": "text",
+   "text": "Customers",
+   "size": 10,
+   "overflow": "fit",
+   "x": 882.7,
+   "y": 174.7,
+   "w": 39.2
+  },
+  {
+   "id": "tablet-t8",
+   "type": "text",
+   "text": "Log in",
+   "size": 10,
+   "overflow": "fit",
+   "x": 925.9,
+   "y": 174.7,
+   "w": 24.5
+  },
+  {
+   "id": "tablet-t9",
+   "type": "text",
+   "text": "Ship landing",
+   "size": 20,
+   "overflow": "fit",
+   "x": 662.2,
+   "y": 219.6,
+   "w": 123.1
+  },
+  {
+   "id": "tablet-t10",
+   "type": "text",
+   "text": "pages in an",
+   "size": 20,
+   "overflow": "fit",
+   "x": 662.2,
+   "y": 241.9,
+   "w": 113.4
+  },
+  {
+   "id": "tablet-t11",
+   "type": "text",
+   "text": "afternoon",
+   "size": 20,
+   "overflow": "fit",
+   "x": 662.2,
+   "y": 264.2,
+   "w": 99.6
+  },
+  {
+   "id": "tablet-t12",
+   "type": "squiggle",
+   "thick": false,
+   "x": 662.2,
+   "y": 294.8,
+   "w": 131.5
+  },
+  {
+   "id": "tablet-t13",
+   "type": "squiggle",
+   "thick": false,
+   "x": 662.2,
+   "y": 304.9,
+   "w": 107.9
+  },
+  {
+   "id": "tablet-t14",
+   "type": "squiggle",
+   "thick": false,
+   "x": 662.2,
+   "y": 315,
+   "w": 123.1
+  },
+  {
+   "id": "tablet-t15",
+   "type": "button",
+   "x": 662.2,
+   "y": 332.2,
+   "w": 52.9,
+   "h": 20.2,
+   "variant": "primary",
+   "label": "Get started"
+  },
+  {
+   "id": "tablet-t16",
+   "type": "button",
+   "x": 720.1,
+   "y": 332.2,
+   "w": 60.9,
+   "h": 20.2,
+   "variant": "outline",
+   "label": "See examples"
+  },
+  {
+   "id": "tablet-t17",
+   "type": "image",
+   "x": 808.3,
+   "y": 222.2,
+   "w": 136.1,
+   "h": 126
+  },
+  {
+   "id": "tablet-t18",
+   "type": "icons",
+   "n": 1,
+   "x": 671,
+   "y": 394.8,
+   "d": 10.1
+  },
+  {
+   "id": "tablet-t19",
+   "type": "text",
+   "text": "Fast",
+   "size": 11,
+   "overflow": "fit",
+   "x": 671,
+   "y": 413.8,
+   "w": 24
+  },
+  {
+   "id": "tablet-t20",
+   "type": "squiggle",
+   "thick": false,
+   "x": 671,
+   "y": 434.7,
+   "w": 111.3
+  },
+  {
+   "id": "tablet-t21",
+   "type": "squiggle",
+   "thick": false,
+   "x": 671,
+   "y": 444.8,
+   "w": 35.7
+  },
+  {
+   "id": "tablet-t22",
+   "type": "icons",
+   "n": 1,
+   "x": 817.1,
+   "y": 394.8,
+   "d": 10.1
+  },
+  {
+   "id": "tablet-t23",
+   "type": "text",
+   "text": "Simple",
+   "size": 11,
+   "overflow": "fit",
+   "x": 817.1,
+   "y": 413.8,
+   "w": 33.6
+  },
+  {
+   "id": "tablet-t24",
+   "type": "squiggle",
+   "thick": false,
+   "x": 817.1,
+   "y": 434.7,
+   "w": 102.1
+  },
+  {
+   "id": "tablet-t25",
+   "type": "squiggle",
+   "thick": false,
+   "x": 817.1,
+   "y": 444.8,
+   "w": 23.9
+  },
+  {
+   "id": "tablet-t26",
+   "type": "icons",
+   "n": 1,
+   "x": 671,
+   "y": 489.7,
+   "d": 10.1
+  },
+  {
+   "id": "tablet-t27",
+   "type": "text",
+   "text": "Yours",
+   "size": 11,
+   "overflow": "fit",
+   "x": 671,
+   "y": 508.8,
+   "w": 29.4
+  },
+  {
+   "id": "tablet-t28",
+   "type": "squiggle",
+   "thick": false,
+   "x": 671,
+   "y": 529.2,
+   "w": 116.8
+  },
+  {
+   "id": "tablet-t29",
+   "type": "squiggle",
+   "thick": false,
+   "x": 671,
+   "y": 539.3,
+   "w": 14.7
+  },
+  {
+   "type": "heading",
+   "id": "phone-label",
+   "text": "Phone \u00b7 390px",
+   "size": 18,
+   "x": 1025,
+   "y": 104
+  },
+  {
+   "type": "screen",
+   "id": "phone-page",
+   "chrome": "phone",
+   "x": 1025,
+   "y": 144,
+   "w": 163.8,
+   "h": 380.5
+  },
+  {
+   "id": "phone-t1",
+   "type": "card",
+   "x": 1033.4,
+   "y": 433.8,
+   "w": 147,
+   "h": 84.8,
+   "children": []
+  },
+  {
+   "id": "phone-t2",
+   "type": "logo",
+   "x": 1033.4,
+   "y": 175,
+   "d": 14
+  },
+  {
+   "id": "phone-t3",
+   "type": "burger",
+   "x": 1169.5,
+   "y": 178.6,
+   "d": 8.5
+  },
+  {
+   "id": "phone-t4",
+   "type": "text",
+   "text": "Ship landing pages in",
+   "size": 14.3,
+   "overflow": "fit",
+   "x": 1033.4,
+   "y": 205.2,
+   "w": 149.1
+  },
+  {
+   "id": "phone-t5",
+   "type": "text",
+   "text": "an afternoon",
+   "size": 14.3,
+   "overflow": "fit",
+   "x": 1033.4,
+   "y": 220.8,
+   "w": 92.4
+  },
+  {
+   "id": "phone-t6",
+   "type": "squiggle",
+   "thick": false,
+   "x": 1033.4,
+   "y": 245.2,
+   "w": 131.5
+  },
+  {
+   "id": "phone-t7",
+   "type": "squiggle",
+   "thick": false,
+   "x": 1033.4,
+   "y": 255.2,
+   "w": 136.5
+  },
+  {
+   "id": "phone-t8",
+   "type": "squiggle",
+   "thick": false,
+   "x": 1033.4,
+   "y": 265.3,
+   "w": 94.9
+  },
+  {
+   "id": "phone-t9",
+   "type": "button",
+   "x": 1033.4,
+   "y": 282.6,
+   "w": 147,
+   "h": 20.2,
+   "variant": "primary",
+   "label": "Get started"
+  },
+  {
+   "id": "phone-t10",
+   "type": "button",
+   "x": 1033.4,
+   "y": 307.8,
+   "w": 147,
+   "h": 20.2,
+   "variant": "outline",
+   "label": "See examples"
+  },
+  {
+   "id": "phone-t11",
+   "type": "image",
+   "x": 1033.4,
+   "y": 344.7,
+   "w": 147,
+   "h": 75.6
+  },
+  {
+   "id": "phone-t12",
+   "type": "icons",
+   "n": 1,
+   "x": 1042.2,
+   "y": 442.6,
+   "d": 10.1
+  },
+  {
+   "id": "phone-t13",
+   "type": "text",
+   "text": "Fast",
+   "size": 11,
+   "overflow": "fit",
+   "x": 1042.2,
+   "y": 461.6,
+   "w": 24
+  },
+  {
+   "id": "phone-t14",
+   "type": "squiggle",
+   "thick": false,
+   "x": 1042.2,
+   "y": 482,
+   "w": 111.3
+  },
+  {
+   "id": "phone-t15",
+   "type": "squiggle",
+   "thick": false,
+   "x": 1042.2,
+   "y": 492.1,
+   "w": 35.7
+  }
+ ],
+ "title": "Responsive \u2014 landing page"
+}

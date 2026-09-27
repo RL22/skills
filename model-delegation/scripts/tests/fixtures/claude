@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -uo pipefail
+
+if [ -n "${MOCK_CLAUDE_READY:-}" ]; then
+  printf 'ready\n' > "$MOCK_CLAUDE_READY"
+  IFS= read -r _ < "$MOCK_CLAUDE_RELEASE"
+  exit 0
+fi
+if [ "${MOCK_CLAUDE_FAIL_RC:-0}" -ne 0 ]; then
+  printf 'mock claude failure\n' >&2
+  exit "$MOCK_CLAUDE_FAIL_RC"
+fi
+printf 'CLAUDE_OK\n'

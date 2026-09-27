@@ -1,0 +1,219 @@
+{
+ "paper": "grid",
+ "seed": 21,
+ "title": "Animation settings",
+ "items": [
+  {
+   "type": "screen",
+   "id": "a",
+   "chrome": "panel",
+   "zigzag": true,
+   "w": 190,
+   "h": 300,
+   "children": [
+    {
+     "type": "heading",
+     "text": "Background",
+     "size": 17,
+     "underline": false
+    },
+    {
+     "type": "dropdown",
+     "value": "~"
+    },
+    {
+     "type": "dropdown",
+     "value": "~"
+    },
+    {
+     "type": "divider"
+    },
+    {
+     "type": "dropdown",
+     "label": "Onload anim",
+     "value": "Fade in"
+    },
+    {
+     "type": "slider",
+     "label": "Speed",
+     "value": 0.45
+    }
+   ]
+  },
+  {
+   "type": "screen",
+   "id": "b",
+   "chrome": "panel",
+   "zigzag": true,
+   "w": 190,
+   "h": 300,
+   "children": [
+    {
+     "type": "heading",
+     "text": "Animations",
+     "size": 17,
+     "underline": false
+    },
+    {
+     "type": "tabs",
+     "items": [
+      "BG",
+      "Content",
+      "Elmts"
+     ],
+     "active": 0
+    },
+    {
+     "type": "dropdown",
+     "value": "~~"
+    },
+    {
+     "type": "squiggle",
+     "lines": 3
+    }
+   ]
+  },
+  {
+   "type": "screen",
+   "id": "c",
+   "chrome": "panel",
+   "zigzag": true,
+   "w": 230,
+   "h": 440,
+   "at": {
+    "rightOf": "b",
+    "gap": 110
+   },
+   "children": [
+    {
+     "type": "heading",
+     "text": "Background",
+     "size": 18
+    },
+    {
+     "type": "dropdown",
+     "label": "Type",
+     "value": "Image"
+    },
+    {
+     "type": "image",
+     "h": 80,
+     "label": "upload"
+    },
+    {
+     "type": "divider",
+     "label": "OR"
+    },
+    {
+     "type": "button",
+     "w": "100%",
+     "size": "sm"
+    },
+    {
+     "type": "more"
+    },
+    {
+     "type": "dropdown",
+     "label": "Onload animation",
+     "value": "Fade in"
+    },
+    {
+     "type": "slider",
+     "label": "Speed",
+     "value": 0.8,
+     "display": "3s"
+    }
+   ]
+  },
+  {
+   "type": "screen",
+   "id": "d",
+   "chrome": "panel",
+   "zigzag": true,
+   "w": 230,
+   "h": 440,
+   "at": {
+    "rightOf": "c",
+    "gap": 24
+   },
+   "children": [
+    {
+     "type": "heading",
+     "text": "Content",
+     "size": 18
+    },
+    {
+     "type": "slider",
+     "label": "Width",
+     "value": 0.55,
+     "display": "30"
+    },
+    {
+     "type": "more"
+    },
+    {
+     "type": "dropdown",
+     "label": "Onload animation",
+     "value": "Fade up"
+    },
+    {
+     "type": "slider",
+     "label": "Speed",
+     "value": 0.5,
+     "display": "1s"
+    },
+    {
+     "type": "slider",
+     "label": "Delay",
+     "value": 0.35,
+     "display": "0.75s"
+    },
+    {
+     "type": "dropdown",
+     "label": "Style",
+     "value": "Staggered"
+    }
+   ]
+  },
+  {
+   "type": "vs",
+   "between": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "type": "strike",
+   "target": "b",
+   "verdict": "Too complex"
+  },
+  {
+   "type": "note",
+   "text": "???",
+   "to": "b@0.55,0.28",
+   "near": "b",
+   "side": "right",
+   "offset": 14,
+   "fy": 0.12,
+   "size": 26,
+   "arrow": false
+  },
+  {
+   "type": "note",
+   "text": "split into two\npanels instead",
+   "near": "c",
+   "side": "top",
+   "offset": 34,
+   "fx": 0.1,
+   "to": "c.top"
+  },
+  {
+   "type": "note",
+   "text": "zigzag = panel scrolls",
+   "near": "d",
+   "side": "bottom",
+   "offset": 30,
+   "to": "d@0.5,0.98"
+  }
+ ]
+}

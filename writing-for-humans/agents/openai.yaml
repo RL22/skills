@@ -1,0 +1,7 @@
+interface:
+  display_name: Writing for Humans
+  short_description: Draft and review clear, specific, human-sounding writing
+  default_prompt: Apply Writing for Humans to this draft and run both quality and quantitative checks.
+
+policy:
+  allow_implicit_invocation: true

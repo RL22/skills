@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+set -uo pipefail
+
+SANDBOX=""
+WORKDIR="$PWD"
+ARGS="$*"
+while [ $# -gt 0 ]; do
+  case "$1" in
+    --sandbox) SANDBOX="${2:-}"; shift 2 ;;
+    --cd) WORKDIR="${2:-}"; shift 2 ;;
+    *) shift ;;
+  esac
+done
+PROMPT="$(cat)"
+
+if [ "${MOCK_CODEX_CHECK_RUNTIME:-0}" -eq 1 ]; then
+  [ -f "$CODEX_HOME/auth.json" ] && [ ! -L "$CODEX_HOME/auth.json" ] || exit 9
+  [ -f "$CODEX_HOME/config.toml" ] && [ ! -L "$CODEX_HOME/config.toml" ] || exit 9
+  [ -L "$CODEX_HOME/skills" ] && [ -L "$CODEX_HOME/rules" ] || exit 9
+  MODE="$(stat -f %Lp "$CODEX_HOME/auth.json" 2>/dev/null || stat -c %a "$CODEX_HOME/auth.json")"
+  [ "$MODE" = 600 ] || exit 9
+  printf 'isolated-copy\n' > "$CODEX_HOME/auth.json"
+fi
+
+if [ "${MOCK_CODEX_FAIL_RC:-0}" -ne 0 ]; then
+  printf 'mock codex failure\n' >&2
+  exit "$MOCK_CODEX_FAIL_RC"
+fi
+
+[ "${MOCK_CODEX_DELAY:-0}" -eq 0 ] || sleep "$MOCK_CODEX_DELAY"
+if [ "$SANDBOX" = workspace-write ] && [[ "$PROMPT" == *notes.md* ]]; then
+  printf 'persisted\n' > "$WORKDIR/notes.md"
+  printf 'IMPLEMENT args=%s prompt=%s\n' "$ARGS" "$PROMPT"
+else
+  printf 'READ_ONLY args=%s\n' "$ARGS"
+fi

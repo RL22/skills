@@ -1,0 +1,6 @@
+[
+  {"rank": 1, "score": 88.5, "breakdown": {"align": 0.9, "hits": ["growth", "seo"], "age_hours": 48},
+   "post_url": "https://example.com/p/1", "author_name": "Pat Poster", "author_type": "person",
+   "text": "A long post about growth engineering that runs well past seventy characters in total length.",
+   "like_count": 12, "comment_count": 3}
+]

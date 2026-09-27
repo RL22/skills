@@ -1,0 +1,23 @@
+{
+  "paper": "plain", "seed": 22, "title": "RL22/skills",
+  "items": [
+    { "type": "tree", "id": "map", "nodeW": 118, "gapX": 30, "gapY": 44, "root":
+      { "id": "root", "label": "Your agent", "children": [
+        { "id": "design", "label": "Design", "badge": 1, "children": [
+          { "id": "sk", "label": "sketch", "children": [ { "id": "og", "label": "og-image", "children": [ { "id": "d3", "label": "+6 more", "dashed": true } ] } ] } ] },
+        { "id": "content", "label": "Content", "badge": 2, "children": [
+          { "id": "rd", "label": "readme", "children": [ { "id": "vid", "label": "video-edit", "children": [ { "id": "c3", "label": "+4 more", "dashed": true } ] } ] } ] },
+        { "id": "agents", "label": "Agent ops", "badge": 3, "children": [
+          { "id": "md", "label": "model-delegation", "children": [ { "id": "ev", "label": "eval-engine", "children": [ { "id": "a3", "label": "+4 more", "dashed": true } ] } ] } ] },
+        { "id": "auto", "label": "Automation", "badge": 4, "children": [
+          { "id": "gm", "label": "gws-gmail-cleanup", "children": [ { "id": "au3", "label": "+2 more", "dashed": true } ] } ] }
+      ] }
+    },
+    { "type": "legend", "cols": 4, "items": [
+      "Diagrams, brand assets, images, thumbnails.",
+      "Scripts, posts, READMEs, finished videos.",
+      "Delegation, evals, graphs, post-mortems.",
+      "Inbox, job search, LinkedIn research."
+    ] }
+  ]
+}

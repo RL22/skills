@@ -1,0 +1,30 @@
+{
+  "paper": "plain", "seed": 31,
+  "items": [
+    { "type": "screen", "id": "before", "w": 230, "h": 430, "chrome": "browser", "children": [
+      { "type": "text", "text": "# my-tool", "size": 16 },
+      { "type": "paragraph", "lines": 5 },
+      { "type": "paragraph", "lines": 5 },
+      { "type": "paragraph", "lines": 4 },
+      { "type": "paragraph", "lines": 5 }
+    ] },
+    { "type": "screen", "id": "after", "w": 300, "h": 430, "chrome": "browser", "children": [
+      { "type": "text", "text": "my-tool", "size": 22, "align": "center" },
+      { "type": "squiggle", "thick": true, "w": "60%", "align": "center" },
+      { "type": "row", "justify": "center", "children": [
+        { "type": "button", "size": "sm", "w": 44, "variant": "ghost", "label": "MIT" },
+        { "type": "button", "size": "sm", "w": 44, "variant": "ghost", "label": "v1.2" },
+        { "type": "button", "size": "sm", "w": 44, "variant": "ghost", "label": "CI" }
+      ] },
+      { "type": "image", "id": "demo", "h": 110, "label": "demo" },
+      { "type": "text", "text": "Quickstart", "size": 15 },
+      { "type": "button", "id": "cmd", "label": "$ npx my-tool", "w": "100%" },
+      { "type": "table", "id": "tbl", "rows": 3, "cols": 3, "header": true }
+    ] },
+    { "type": "vs", "between": ["before", "after"], "text": "→" },
+    { "type": "strike", "target": "before", "verdict": "wall of prose" },
+    { "type": "note", "text": "what + who\nin 5 seconds", "near": "after", "side": "right", "offset": 40, "fy": 0.12, "to": "after@0.75,0.1" },
+    { "type": "note", "text": "show it working", "near": "after", "side": "right", "offset": 40, "fy": 0.4, "to": "demo" },
+    { "type": "note", "text": "one command\nto run it", "ink": "green", "near": "after", "side": "right", "offset": 40, "fy": 0.7, "to": "cmd" }
+  ]
+}

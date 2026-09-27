@@ -1,0 +1,197 @@
+{
+ "paper": "grid",
+ "seed": 12,
+ "title": "Signup flow",
+ "items": [
+  {
+   "type": "screen",
+   "id": "landing",
+   "chrome": "browser",
+   "w": 250,
+   "h": 250,
+   "children": [
+    {
+     "type": "nav",
+     "n": 3,
+     "cta": true
+    },
+    {
+     "type": "squiggle",
+     "thick": true,
+     "align": "center",
+     "w": "70%",
+     "lines": 1
+    },
+    {
+     "type": "squiggle",
+     "lines": 2,
+     "align": "center"
+    },
+    {
+     "type": "row",
+     "children": [
+      {
+       "type": "image",
+       "h": 44
+      },
+      {
+       "type": "image",
+       "h": 44
+      },
+      {
+       "type": "image",
+       "h": 44
+      }
+     ]
+    },
+    {
+     "type": "button",
+     "id": "cta",
+     "label": "Start",
+     "align": "center"
+    }
+   ]
+  },
+  {
+   "type": "screen",
+   "id": "editor",
+   "chrome": "plain",
+   "menu": true,
+   "w": 250,
+   "h": 250,
+   "children": [
+    {
+     "type": "avatar",
+     "id": "av",
+     "d": 56,
+     "align": "center",
+     "selected": true
+    },
+    {
+     "type": "text",
+     "text": "Jane Doe",
+     "align": "center",
+     "size": 18
+    },
+    {
+     "type": "squiggle",
+     "lines": 2,
+     "align": "center"
+    },
+    {
+     "type": "icons",
+     "n": 4,
+     "align": "center"
+    },
+    {
+     "type": "plus",
+     "align": "center"
+    }
+   ]
+  },
+  {
+   "type": "screen",
+   "id": "save",
+   "chrome": "modal",
+   "title": "Save",
+   "w": 220,
+   "h": 250,
+   "children": [
+    {
+     "type": "input",
+     "label": "Title",
+     "filled": true
+    },
+    {
+     "type": "input",
+     "label": "Email",
+     "placeholder": "you@..."
+    },
+    {
+     "type": "button",
+     "label": "Save",
+     "w": "100%"
+    }
+   ]
+  },
+  {
+   "type": "screen",
+   "id": "ok",
+   "chrome": "modal",
+   "w": 170,
+   "h": 110,
+   "children": [
+    {
+     "type": "heading",
+     "text": "OK!",
+     "align": "center",
+     "size": 20
+    },
+    {
+     "type": "row",
+     "justify": "center",
+     "children": [
+      {
+       "type": "button",
+       "label": "View",
+       "variant": "outline",
+       "size": "sm"
+      },
+      {
+       "type": "button",
+       "label": "Done",
+       "size": "sm"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "arrow",
+   "from": "cta",
+   "to": "editor"
+  },
+  {
+   "type": "arrow",
+   "from": "editor",
+   "to": "save",
+   "label": "menu > Save"
+  },
+  {
+   "type": "arrow",
+   "from": "save",
+   "to": "ok"
+  },
+  {
+   "type": "step",
+   "n": 1,
+   "target": "landing"
+  },
+  {
+   "type": "step",
+   "n": 2,
+   "target": "editor"
+  },
+  {
+   "type": "step",
+   "n": 3,
+   "target": "save"
+  },
+  {
+   "type": "note",
+   "text": "no signup needed\nto start!",
+   "to": "editor@0.5,0.25",
+   "side": "bottom",
+   "near": "editor",
+   "offset": 40
+  },
+  {
+   "type": "note",
+   "text": "hatched = primary",
+   "to": "cta",
+   "side": "bottom",
+   "near": "landing",
+   "offset": 44
+  }
+ ]
+}
